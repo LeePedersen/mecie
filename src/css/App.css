@@ -1,0 +1,18 @@
+
+body {
+  background-image: url(../img/oilbackground2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+  /* background-repeat: no-repeat; */
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-attachment: fixed; */
+  color: rgb(169,156,188);
+}
+
+a {
+  color: rgb(169,156,188);
+  text-decoration: none;
+}

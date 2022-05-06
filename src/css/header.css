@@ -1,0 +1,35 @@
+
+.header {
+    position: fixed;
+    width: 200px;
+    top: 0;
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+
+  .nameHeader {
+      font-size: 50px;
+      color: rgb(169,156,188);
+    }
+  
+  /* .instagram {
+    margin-top: 30px;
+  } */
+  
+  .headerLink {
+    padding-top: 15px;
+    /* padding-bottom: 15px; */
+    margin-top: 30px;
+    margin-bottom: 0px;
+    /* font-size: 30px; */
+    /* text-decoration: none; */
+    /* color: black; */
+    font-size: 20px;
+
+  }
+
+  .brushStroke {
+    width: 60px;
+}
+  
+  

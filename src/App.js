@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './css/App.css';
+import Header from './components/header';
+// import Menu from './components/menu';
+import Paintings from './components/paintings';
+import About from './components/about';
+import Contact from './components/contact';
+import ViewImage from './components/viewImage';
+import Error404 from './components/Error404';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      useMenu: false,
+    }
+  }
+
+  // componentDidMount() {
+  //   window.addEventListener("resize", this.resize.bind(this));
+  //   this.resize();
+  // }
+
+  // resize() {
+  //   const currentUseMenu = (window.innerWidth <= 768);
+  //   if (currentUseMenu !== this.state.useMenu) {
+  //     this.setState({useMenu: currentUseMenu});
+  //   }
+  // }
+
+  // componentWillUnmount() {
+  //     window.removeEventListener("resize", this.resize.bind(this));
+  // }
+
+  render() {
+    return (
+      <div>
+        <BrowserRouter>
+         <Header />
+          <Routes>
+            <Route exact path='/' element={<Paintings/>} />
+            <Route path='/about' element={<About/>} />
+            <Route path='/contact' element={<Contact/>} />
+            <Route path='/viewImage' element={<ViewImage/>} />
+            <Route element={<Error404/>} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    )
+  }
 }
 
 export default App;
