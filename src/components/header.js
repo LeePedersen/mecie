@@ -9,12 +9,9 @@ function Header() {
   return (
     <div className="header">
       <h1 className="nameHeader">MECIE</h1>
-      <p className="headerLink"><Link to="/">paintings</Link></p>
-      <img className="brushStroke" src={brushstroke}/>
-      <p className="headerLink"><Link to="About">about</Link></p>
-      <img className="brushStroke" src={brushstroke}/>
-      <p className="headerLink"><Link to="Contact">contact</Link></p>
-      <img className="brushStroke" src={brushstroke}/>
+      <h1 className="headerLink"><Link to="/">paintings</Link></h1>
+      <h1 className="headerLink"><Link to="About">about</Link></h1>
+      <h1 className="headerLink"><Link to="Contact">contact</Link></h1>
       <Outlet />
     </div>
   );
