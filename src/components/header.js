@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet, Link } from 'react-router-dom';
 import '../css/header.css';
-import brushstroke from '../img/brushstroke.png';
+import brushstroke from '../img/brushstrokegreen.png';
 // import { SiInstagram } from "react-icons/si";
 
 function Header() {

@@ -7,8 +7,8 @@
 } */
 
 body {
+  background-image: url(../img/oilbackgroundgreen.jpg);
   min-height: 100%;
-  background-image: url(../img/oilbackground2.jpg);
   background-size: cover;
   background-attachment: fixed;
 
@@ -17,10 +17,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-attachment: fixed; */
-  color: rgb(169,156,188);
+  color: rgb(168, 188, 156);
 }
 
 a {
-  color: rgb(169,156,188);
+  color: rgb(168, 188, 156);
   text-decoration: none;
 }

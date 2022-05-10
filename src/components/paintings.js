@@ -1,5 +1,5 @@
 import '../css/paintings.css';
-import brushstrokelong from '../img/brushstrokelong.png';
+import brushstrokelong from '../img/brushstrokelonggreen.png';
 
 
 const Paintings = () => {
