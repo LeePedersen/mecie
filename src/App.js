@@ -43,7 +43,7 @@ class App extends React.Component {
             <Route exact path='/' element={<Paintings/>} />
             <Route path='/about' element={<About/>} />
             <Route path='/contact' element={<Contact/>} />
-            <Route element={<Error404/>} />
+            <Route path='*'  exact={true} element={<Error404/>} />
           </Routes>
         </BrowserRouter>
       </div>
