@@ -1,6 +1,14 @@
+/* html {
+  min-height: 100%;
+} */
+
+/* html, body, #root, .App {
+  min-height: 100vh;
+} */
 
 body {
   background-image: url(../img/oilbackgroundgreen.jpg);
+  min-height: 100%;
   background-size: cover;
   background-attachment: fixed;
 

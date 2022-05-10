@@ -11,25 +11,35 @@
       font-size: 50px;
       color: rgb(168, 188, 156);
     }
-  
-  /* .instagram {
-    margin-top: 30px;
-  } */
-  
-  .headerLink {
-    padding-top: 15px;
-    /* padding-bottom: 15px; */
-    margin-top: 30px;
-    margin-bottom: 0px;
-    /* font-size: 30px; */
-    /* text-decoration: none; */
-    /* color: black; */
-    font-size: 20px;
 
-  }
+/* .instagram {
+  margin-top: 30px;
+} */
 
-  .brushStroke {
-    width: 60px;
+.headerLink {
+  height: 30px;
+  padding-top: 15px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.headerLink:after {
+  display: block;
+  content: '';
+  width: 70px;
+  height: 5px;
+  background-image: url(../img/brushstroke.png);
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: bottom left;
+  transform: scaleX(0);  
+  transition: transform 350ms ease-in-out;
+  transform-origin:  0% 50%;
 }
   
-  
+.headerLink:hover:after { 
+  transform: scaleX(1); 
+}
+
+
