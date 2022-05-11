@@ -3,11 +3,10 @@ import PageHeader from "./pageheader"
 
 
 const Paintings = () => {
-    console.log("hit paintings");
     return(
         <>
-          <PageHeader />
-          <div className="sculpture">
+          <PageHeader title={"Paintings"} />
+          <div className="paintings">
           </div>
         </>
 
